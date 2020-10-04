@@ -8,7 +8,7 @@ Développez un programme qui entre les ventes brutes hebdomadaires de chaque repr
 affiche son salaire. Entrez -1 à la valeur des ventes pour quitter le programme.
 */
 // Auteur : Olivier Larue
-// Date : 2020
+// Date : 2020 05 octobre
 
 #include <iostream>
 using namespace std;			// Pour alléger le code et plus mettre std:: avant les cout, cin, endl, ...
@@ -33,7 +33,8 @@ int main()
 	// commition = 7.5% de la valeur des ventes
 	cout << "Veuillez entrer la valeur des ventes obtenues cette semaine: ";
 	cin >> valeurDesVentes;
-	
+
+
 	while (valeurDesVentes != -1)
 	{
 		if (valeurDesVentes < -1) // la valeur des ventes ne peut etre negative. Tu ne vends pas à la perte donc pas de chiffre négatif et l'utilisateur essai d'en rentrer le programme return 0.
@@ -41,6 +42,7 @@ int main()
 			cout << "ERREUR: Il est imposible d'entrer un nombre négatif pour repésenter la valeur des ventes, veuillez réessayer.";
 			return 0;
 		}
+		
 		
 		commition = 7.5 * valeurDesVentes / 100; //Pour calculer la commition
 		salaire = argentSemaine + commition; // Pour calculer le salaire
