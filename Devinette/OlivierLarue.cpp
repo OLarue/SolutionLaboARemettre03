@@ -23,7 +23,7 @@ int main()
 	srand(time(0)); // pour activer l’aléatoire dans le programme
 	iRandom = rand() % 101;// l’ordinateur calcule un nombre aléatoire entre 0 et 100 et le stocke dans iRandom
 
-	cout << "Veuillez entrer votre choix: ";
+	cout << "Veuillez entrer un nombre entre 1 et 100: ";
 	cin >> choixUtilisateur;
 
 	if (choixUtilisateur < 1 || choixUtilisateur > 100) //Pour s'assurer que le nombre est bien entre 1 et 100
@@ -46,7 +46,7 @@ int main()
 				cout << "Le chiffre que vouz cherchez est plus petit que " << choixUtilisateur << endl;
 			}
 
-			cout << "Veuillez entrer votre choix: ";
+			cout << "Veuillez entrer un nombre entre 1 et 100: ";
 			cin >> choixUtilisateur;
 
 			if (choixUtilisateur < 1 || choixUtilisateur > 100) //Pour s'assurer que le nombre est bien entre 1 et 100
